@@ -12,22 +12,40 @@ namespace Week8AccademMaster.RepositoryEF.RepositoryEF
     {
         public Lezione Add(Lezione item)
         {
-            throw new NotImplementedException();
+            using (var ctx = new MasterContext())
+            {
+                ctx.Lezioni.Add(item);
+                ctx.SaveChanges();
+                return item;
+            }
         }
 
         public bool Delete(Lezione item)
         {
-            throw new NotImplementedException();
+            using (var ctx = new MasterContext())
+            {
+                ctx.Lezioni.Remove(item);
+                ctx.SaveChanges();
+            }
+            return true;
         }
 
         public IList<Lezione> GetAll()
         {
-            throw new NotImplementedException();
+            using (var ctx = new MasterContext())
+            {
+                return ctx.Lezioni.ToList();
+            }
         }
 
         public Lezione Update(Lezione item)
         {
-            throw new NotImplementedException();
+            using (var ctx = new MasterContext())
+            {
+                ctx.Lezioni.Update(item);
+                ctx.SaveChanges();
+            }
+            return item;
         }
     }
 }
