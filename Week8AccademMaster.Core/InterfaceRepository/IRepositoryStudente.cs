@@ -11,5 +11,9 @@ namespace Week8AccademMaster.Core.InterfaceRepository
     {
 
         public Studente GetById(int ID);
+        public List<Studente> GetByCorsoCodice(string CorsoCodice)
+        {
+            return GetAll().Where(s=>s.CorsoCodice == CorsoCodice).ToList();
+        }
     }
 }

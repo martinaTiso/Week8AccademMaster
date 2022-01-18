@@ -23,8 +23,8 @@ namespace Week8AccademMaster.RepositoryEF
             builder.Property(c => c.Aula).IsRequired();
 
 
-            builder.HasOne(e => e.Corso).WithMany(s => s.Lezioni).HasForeignKey(s => s.CorsoCodice).HasConstraintName("Fk_Corso");
-            builder.HasOne(e => e.Docente).WithMany(s => s.Lezioni).HasForeignKey(s => s.CorsoCodice).HasConstraintName("Fk_Docente");
+            builder.HasOne(e => e.Corso).WithMany(s => s.Lezioni).HasForeignKey(s => s.CorsoCodice);
+            builder.HasOne(e => e.Docente).WithMany(s => s.Lezioni).HasForeignKey(s => s.DocenteID);
             
         }
     }

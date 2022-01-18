@@ -101,15 +101,22 @@ namespace Week8AccademMaster.Core.BusinessLayer
             return StudentiRepo.GetAll().ToList();
         }
 
+
+
         public List<Studente> GetStudentiByCorso(string? codice)
         {
-            throw new NotImplementedException();
-        }
+            var studenti = StudentiRepo.GetByCorsoCodice(codice).ToList();
 
-        //public List<Studente> GetStudentiByCorso(string? codice)
-        //{
-        //    var studenti= StudentiRepo.
-        //}
+            if(studenti.Count()==0)
+            {
+                Console.WriteLine($"non ci sono studenti nel corso con codice:{codice}");
+            }
+            else
+            {
+                return studenti;
+            }
+
+        }
 
         public Esito ModicaCorso(string? codice, string? nuovoNome, string? nuovaDescrizione)
         {
