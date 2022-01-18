@@ -23,7 +23,7 @@ namespace Week8AccademMaster.RepositoryEF
             builder.Property(c => c.Telefono).IsRequired();
            
 
-            builder.HasMany(e => e.Lezione).WithOne(e => e.Docente).HasForeignKey(e => e.CorsoCodice);
+            builder.HasMany(e => e.Lezione).WithOne(e => e.Docente).HasForeignKey(e => e.DocenteID);
         }
 
     }

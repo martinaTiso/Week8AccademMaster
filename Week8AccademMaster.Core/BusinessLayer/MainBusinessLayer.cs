@@ -18,6 +18,8 @@ namespace Week8AccademMaster.Core.BusinessLayer
         {
             corsiRepo = corsi;
             StudentiRepo = studenti;
+            DocentiRepo = docenti;
+            LezioniRepo = lezioni;
         }
 
         public Esito AddNuovoCorso(Corso nuovocorso)
@@ -190,7 +192,7 @@ namespace Week8AccademMaster.Core.BusinessLayer
             {
                 return new Esito { Messaggio = "Non esiste nessun corso con il codice che hai inserito", IsOk = false };
             }
-            else
+            else 
             {
                 
 

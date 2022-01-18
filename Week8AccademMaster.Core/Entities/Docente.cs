@@ -10,7 +10,7 @@ namespace Week8AccademMaster.Core.Entities
     {
         public string Telefono { get; set; }
 
-        public IList<Lezione> Lezione { get; set; }= new List<Lezione>();
+        public IList<Lezione> Lezioni { get; set; }= new List<Lezione>();
 
 
         public override string ToString()

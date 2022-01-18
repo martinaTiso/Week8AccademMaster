@@ -21,7 +21,8 @@ namespace Week8AccademMaster.RepositoryEF
             builder.Property(c => c.Nome).IsRequired();
             builder.Property(c => c.Descrizione).IsRequired();
 
-            builder.HasMany(e => e.Studenti).WithOne(e => e.Corso).HasForeignKey(e => e.ID);
+            builder.HasMany(e => e.Studenti).WithOne(e => e.Corso).HasForeignKey(e => e.CorsoCodice);
+            builder.HasMany(e => e.Lezioni).WithOne(e => e.Corso).HasForeignKey(e => e.CorsoCodice);
         }
 
     }

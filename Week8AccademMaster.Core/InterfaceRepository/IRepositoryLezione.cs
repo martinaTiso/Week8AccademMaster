@@ -7,7 +7,7 @@ using Week8AccademMaster.Core.Entities;
 
 namespace Week8AccademMaster.Core.InterfaceRepository
 {
-    internal interface IRepositoryLezione : IRepository<Lezione>
+    public interface IRepositoryLezione : IRepository<Lezione>
     {
 
         public Lezione GetById(int ID);
