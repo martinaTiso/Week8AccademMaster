@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week8AccademMaster.RepositoryEF
 {
-    internal class RepositoryLezioneMock : IRepositoryLezione
+    public class RepositoryLezioneMock : IRepositoryLezione
     {
     }
 

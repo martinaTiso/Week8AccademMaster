@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Week8AccademMaster.Core\Week8AccademMaster.Core.csproj" />
+    <ProjectReference Include="..\Week8AccademMaster.RepositoryEF\Week8AccademMaster.RepositoryEF.csproj" />
     <ProjectReference Include="..\Week8AccademMaster.RepositoryMock\Week8AccademMaster.RepositoryMock.csproj" />
   </ItemGroup>
 

@@ -8,7 +8,26 @@ using Week8AccademMaster.Core.InterfaceRepository;
 
 namespace Week8AccademMaster.RepositoryEF.RepositoryEF
 {
-    internal class RepositoryLezioneEF : IRepository<Lezione>
+    public class RepositoryLezioneEF : IRepository<Lezione>
     {
+        public Lezione Add(Lezione item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Delete(Lezione item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IList<Lezione> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Lezione Update(Lezione item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
