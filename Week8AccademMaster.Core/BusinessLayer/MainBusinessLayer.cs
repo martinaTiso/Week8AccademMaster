@@ -110,6 +110,7 @@ namespace Week8AccademMaster.Core.BusinessLayer
             if(studenti.Count()==0)
             {
                 Console.WriteLine($"non ci sono studenti nel corso con codice:{codice}");
+                return null;
             }
             else
             {
